@@ -1,0 +1,24 @@
+@import 'constants';
+@import 'operations';
+@import 'block';
+.block1 {
+    @extend .block;
+    background:$gre;
+    top: 0px;
+    left: 0px;
+}
+
+.block2 {
+    @extend .block;
+    background:$yel;
+    top: add-number(0, $h);
+    left: add-number(0, $w);
+}
+
+
+.block3 {
+    @extend .block;
+    background:$cya;
+    top: add-number($h, $h);
+    left: add-number($w, $w);
+}
